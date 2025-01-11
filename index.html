@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code</title>
+    <style>
+        .logo img {
+            height: 40px;
+        }
+
+        .heading {
+            font-size: 65px;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 15px;
+            padding: 30px 40px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            margin: 10px;
+            padding: 10px 0px 0px 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+
+        }
+
+        .button:hover {
+            border: none;
+            cursor: pointer;
+        }
+
+        .download {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            height: 30px;
+            width: 150px;
+            margin: 5px;
+        }
+
+        .copilot {
+            background-color: rgb(221, 217, 217);
+            border: none;
+            border-radius: 5px;
+            height: 30px;
+            width: 150px;
+            margin: 5px;
+        }
+
+        .play {
+            background-color: rgb(230, 223, 223);
+            margin: 5px;
+            padding: 15px;
+            display: flex;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        .image img {
+            height: 800px;
+            display: block;
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .search-container {
+            position: relative;
+        }
+
+        .search-input {
+            width: 200px;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-button {
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+
+        .flex-container {
+            display: grid;
+            justify-content: space-around;
+            grid-template-columns: 30% 30% 30%;
+            grid-gap: 30px;
+            padding: 15px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .flex-item {
+            text-align: center;
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .box {
+            display: grid;
+            background-color: rgb(237, 232, 232);
+            grid-template-columns: 33% 33% 33%;
+            border: 2px double;
+            margin-left: 125px;
+            margin-right: 125px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        .container1 {
+            display: grid;
+            justify-content: space-around;
+            grid-template-columns: 30% 70%;
+            grid-gap: 10px;
+        }
+
+        .tt-container {
+            display: grid;
+            justify-content: space-around;
+            grid-template-columns: 30% 70%;
+            grid-gap: 10px;
+            padding: 15px;
+            margin-left: 150px;
+            margin-right: 100px;
+        }
+
+        .tt {
+            display: inline;
+        }
+        .footer {
+            text-align: center;
+            justify-content: center;
+            padding: 10px; 
+            gap: 10px;
+            background-color: rgb(239, 236, 236);
+        }
+        .table {
+            border-collapse: collapse;
+            border: 2px solid rgb(199, 188, 188);
+            border-spacing: 15px;
+            margin-left: 150px;
+            margin-right: 0px;
+        }
+
+        .tr,td {
+            border: 2px double rgb(252, 249, 249);
+            padding: 25px;
+            border-radius: 8px;
+            height: 1px;
+            max-width: 448px;
+            background-color: rgb(236, 233, 233);
+        }
+
+        .tb-container {
+        
+            justify-content: space-around;
+            grid-template-columns: 50% 50%;
+            grid-gap: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="D:\Notes\VS Code\EY-GDS\vs-code web\vslogo.png">
+        </div>
+
+        <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Extensions</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">GitHub Copilot</a></li>
+        </ul>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search Docs" class="search-input">
+            <button class="download-button">Download</button>
+        </div>
+    </nav>
+
+    <div>
+        <p class="center">🚀Get <a href="https://code.visualstudio.com/docs/copilot/setup-simplified">GitHub Copilot
+                Free</a> in VS Code</p>
+        <h1 class="heading">Your code editor.<br>Redefined with AI.</h1>
+        <div class="button">
+            <button class="download">Download for mac</button>
+            <button class="copilot">Get Copilot Free</button>
+        </div>
+        <p class="center"><a href="https://vscode.dev/"><u>Web,</u></a>
+            <a href="https://code.visualstudio.com/insiders/"><u>Insiders edition</u></a>, or 
+            <a href="https://code.visualstudio.com/Download"><u>other platforms</u></a></p>
+        <div class="image">
+            <img src="D:\Notes\VS Code\EY-GDS\vs-code web\Screenshot (25).png">
+        </div>
+
+        <div class="button">
+            <button class="play">Play</button>
+        </div>
+
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <h4>Choose the model that works for you.</h4>
+                <p>
+                    Pick the model that works best for your project and team, including GPT 4o and Claude Sonnet.
+                </p>
+            </div>
+            <div class="flex-item">
+                <h4>An expert on your codebase.</h4>
+                <p>
+                    Copilot locally indexes your codebase to understand what’s relevant and supplements that context
+                    to
+                    interactions with Copilot.
+                </p>
+
+            </div>
+            <div class="flex-item">
+                <h4>Personalized to your needs.</h4>
+                <p>
+                    Copilot works the way you do. Customize Copilot's prompts with details about your team's
+                    workflows,
+                    tools,
+                    and projects.
+                </p>
+            </div>
+        </div>
+        <br><br>
+        <div class="box">
+            <h2>Activate Copilot Free <br> in Visual Studio Code</h2>
+            <p>No trial. No credit card required. Just your GitHub account.</p><button class="copilot">Get Copilot Free</button>
+        </div>
+        <br>
+        <div class="tt-container">
+            <div class="tt">
+                <h3>Create faster</h3>
+                <p>Describe what you want to build in natural language, and Copilot Edits takes care of the rest.
+                    Copilot Edits makes changes across files in your codebase with a UI designed for rapid iteration.
+                    It's the fastest way
+                    to add new functionality to your apps.<br>
+                    <a href="https://code.visualstudio.com/docs/copilot/copilot-edits"><u>Build with Copilot Edits.
+                        </u></a><br><br>
+                    Copilot Chat is an expert on your codebase, helping you to answer questions, explain code, and
+                    propose fixes.Chat is available wherever you need it - either as a dedicated sidebar panel or
+                    directly from within
+                    your code so you can stay in context.<br>
+                    <a href="https://code.visualstudio.com/docs/copilot/copilot-edits"><u>Get answers from Copilot Chat.
+                        </u></a><br>
+                </p>
+            </div>
+            <div class="tt-container">
+                <img src="D:\Notes\VS Code\EY-GDS\vs-code web\Screenshot (27).png" height="450px" width="700px">
+            </div>
+        </div>
+
+        <div class="tt-container">
+            <div class="tt">
+                <h3>Code efficiently</h3>
+                <p>Copilot is your AI pair programmer infused directly into the editor. Just start typing, and Copilot
+                    will
+                    complete your thought by offering a completion on the current line or (sometimes) a whole new block
+                    of
+                    code.Just like a coworker, you have the flexibility to accept all, some, or none of Copilot's
+                    suggestions.
+                    Copilot supports a broad range of languages and frameworks. <br>
+                    <a href="https://code.visualstudio.com/docs/copilot/copilot-edits"><u>Pair program with
+                            Copilot</u></a>
+                </p>
+            </div>
+            <div class="tt-container">
+                <img src="D:\Notes\VS Code\EY-GDS\vs-code web\Screenshot (31).png" height="450px" width="700px">
+            </div>
+        </div>
+
+        <div class="tt-container">
+            <div class="tt">
+                <h3>Code in any language</h3>
+                <p>VS Code supports almost every major programming language. Several ship in the box, like JavaScript,
+                    TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace..</p>
+            </div>
+            <table class="table">
+                <tr class="tr">
+                    <td>Python</td>
+                    <td>Stripe</td>
+                    <td>C/C++</td>
+                </tr>
+                <tr>
+                    <td>Jupiter</td>
+                    <td>Gitlens</td>
+                    <td>C# Dev Kit</td>
+                </tr>
+                <tr>
+                    <td>MongoDB </td>
+                    <td>GitHub Copilot for Azure </td>
+                    <td>Remote Development</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="tt-container">
+            <div class="tt">
+                <h3>Code with Extensions</h3>
+                <p>Extensions let you customize VS Code and Copilot with AI-powered features grounded securely in your
+                    team's data
+                    and workflows. Grab one from the gallery and add it to chat like @azure, or <a href="https://code.visualstudio.com/docs/copilot/copilot-edits"><u>build your own Copilot
+                    extension</u></a> to
+                    power your team's unique scenarios.</p>
+            </div>
+
+            <table class="table">
+                <tr class="tr">
+                    <td>JavaScript</td>
+                    <td>TypeScript</td>
+                    <td>Python</td>
+                </tr>
+                <tr class="tr">
+                    <td>C#</td>
+                    <td>C++</td>
+                    <td>HTML</td>
+                </tr>
+                <tr class="tr">
+                    <td>Java</td>
+                    <td>JSON</td>
+                    <td>PHP</td>
+                </tr>
+                <tr class="tr">
+                    <td>Powershell</td>
+                    <td>Markdown</td>
+                    <td>YAML</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="tt-container">
+            <div class="tt">
+                <h2>Fully customizable</h2>
+                <p>Customize your VS Code UI and layout so that it fits your coding style.<br><br>
+                    <a href="https://code.visualstudio.com/docs/copilot/copilot-edits"><u>Color themes</u></a> let you modify the colors in VS Code's user interface to suit your preferences and work
+                    environment.<br><br>
+                    <a href="https://code.visualstudio.com/docs/copilot/copilot-edits"><u>Settings Sync</u></a> enables you to share your user settings across your VS Code instances with the
+                    Settings Sync
+                    feature.<br><br>
+                    <a href="https://code.visualstudio.com/docs/copilot/copilot-edits"><u>Profiles</u></a> let you create sets of customizations and quickly switch between them or share them with
+                    others.
+                </p>
+            </div>
+            <div class="tt-container">
+                <img src="D:\Notes\VS Code\EY-GDS\vs-code web\Screenshot (32).png" height="450px" width="700px">
+            </div>
+        </div>
+
+        <div class="tt-container">
+            <div class="tt">
+                <h2>Code anywhere</h2>
+                <p>Code wherever you're most productive, whether you're connected to the cloud, a remote repository, or
+                    in the
+                    browser with VS Code for the Web (vscode.dev).<br><br>
+                    <a href="https://code.visualstudio.com/docs/copilot/copilot-edits"><u>Built-in Source Control</u></a> empowers you with Git support out-of-the-box. Many other source control
+                    providers
+                    are available through extensions.<br><br>
+                    <a href="https://code.visualstudio.com/docs/copilot/copilot-edits"><u>GitHub Codespaces</u></a> provides cloud-powered development environments for any activity - whether it's a
+                    long-term project, or a short-term task like reviewing a pull request.
+                </p>
+            </div>
+            <div class="tt-container">
+                <img src="D:\Notes\VS Code\EY-GDS\vs-code web\Screenshot (33).png" height="450px" width="700px">
+            </div>
+        </div>
+
+        <h2 align="center">Code with rich features</h2>
+        <p align="center">There's a lot more to an editor. Whether it's using built-in features or<br> rich
+            extensions, there's
+            something
+            for everyone.
+        </p>
+        
+        <footer class="footer">
+            <p>&copy; 2025 Visual Studio Code.</p>
+            <a href="#"><u>Support|</u></a> 
+            <a href="#"><u>Privacy|</u></a>  
+            <a href="#"><u>Terms of Use|</u></a> 
+            <a href="#"><u>License</u></a>
+        </footer>
+        
+
+</body>
+
+</html>
